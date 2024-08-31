@@ -6,12 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/01.Scenes/GameScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
     path: Assets/01.Scenes/ClearScene.unity
     guid: 4476a9c3058358745a357ffc9bb5bf39
   - enabled: 1
-    path: Assets/CLimbCloud.unity
-    guid: c91e0f891547a4f409a1389fd79472e0
+    path: Assets/01.Scenes/CLimbCloud.unity
+    guid: b7ae9d81135471f418941594b8630566
   m_configObjects: {}

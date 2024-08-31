@@ -53,9 +53,9 @@ public class PlayerController : MonoBehaviour
 
         animator.speed = speedX / 2.0f;
        // if (transform.position.y < 10f)
-     //   {
-         //  SceneManager.LoadScene("CLimbCloud");
-     //  }
+       // {
+       //    SceneManager.LoadScene("CLimbCloud");
+      //  }
         
     }
     void OnTriggerEnter2D(Collider2D other)
