@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rigid2D;
     Animator animator;
+    
 
     float jumpForce = 680.0f;
     float walkForce = 30.0f;
@@ -16,6 +17,7 @@ public class PlayerController : MonoBehaviour
     {
         rigid2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+       
     }
 
     // Update is called once per frame
@@ -25,6 +27,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && rigid2D.velocity.y.Equals(0))
         {
             rigid2D.AddForce(transform.up * jumpForce);
+            animator.SetTrigger("Jump");
         }
 
         int key = 0;
@@ -49,6 +52,11 @@ public class PlayerController : MonoBehaviour
         }
 
         animator.speed = speedX / 2.0f;
+       // if (transform.position.y < 10f)
+     //   {
+         //  SceneManager.LoadScene("CLimbCloud");
+     //  }
+        
     }
     void OnTriggerEnter2D(Collider2D other)
     {
